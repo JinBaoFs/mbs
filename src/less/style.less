@@ -1,0 +1,540 @@
+/*头底部公共样式*/
+header{
+    width:100%;
+    height:245px;
+}
+
+/*全局样式*/
+
+/*内容为1200的盒子*/
+
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+
+/*单行注释*/
+.whole_dan{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+/*居中*/
+.whole_center{
+    position:absolute;
+    left:50%;top:50%;
+    transform:translate(-50%,-50%);
+}
+
+/*三角形*/
+.whole_three{
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent  transparent  transparent #fff;
+    width: 0px;
+    height: 0px;
+}
+
+/*头部小工具菜单栏*/
+.index_toll{
+    height:35px;
+    width:100%;
+    background:#222;
+    .toll_left{
+        width:330px;float:left;
+        height:30px;
+        background:url(../image/index_h2.jpg) no-repeat -23px -3px;
+    }
+    .toll_right{
+        float:right;
+        text-align:right;
+        color:#eee;
+        line-height:35px;
+        a{
+            color:#eee;
+            font-size:12px;
+            padding:0 15px;
+            border-right:1px #fff solid;
+            position:relative;
+        }
+        .car{
+            border-right:none;
+            img{margin-left: 2px;margin-top: -5px;}
+        }
+        .wechat{
+            img{position:absolute;top:16px;left:-100px;display:none;}
+            &:hover img{display:block;}
+        }
+        .phone{
+            img{margin-top: -2px;}
+        }
+        .blog{
+            img{position:absolute;top:16px;left:-60px;display:none;}
+            &:hover img{display:block}
+        }
+    }
+}
+
+/*头部欢迎广告*/
+
+.adver{
+    width:100%;
+    height:48px;
+    overflow:hidden;
+    background:#f6f6f6;
+    a{
+        float:left;
+    }
+    
+}
+
+/*头部查询板块*/
+.search{
+    width:100%;
+    box-sizing:border-box;padding-top:20px;
+    height:162px;
+    .logo{
+        width:320px;
+        float:left;
+        margin-right: 50px;
+        h1{
+            text-indent:-90000px;
+            width:320px;
+            height:138px;
+            background:url(../image/logo.gif) no-repeat center;
+            a{
+                text-indent:-90000px;
+                display:block;
+                width:100%;height:100%;
+            }
+        }
+    }
+    .check{
+        float:left;
+        margin-top: 35px;
+        overflow:hidden;
+        input{
+            width:445px;height:40px;
+            border:2px #e50163 solid;
+            float:left;
+            padding-left:10px;
+        }
+        .check_btn{
+            width:80px;background:#e50163;color:#fff;
+            padding-left:0px;cursor:pointer;
+        }
+    }
+    .search_right{
+        float:right;
+        img{margin-top: 20px;}
+    }
+}
+
+
+/*底部板块*/
+footer{
+    width:100%;
+    height:auto;
+    padding: 30px 0;
+    box-sizing:border-box;
+}
+
+/*底部导航*/
+.foot_nav{
+        width:100%;
+        overflow:hidden;
+        box-sizing:border-box;
+        padding:20px 0;
+        background:#ececec;
+        font-size:14px;
+        dl{
+            float:left;
+            width:12.5%;
+            box-sizing:border-box;
+            padding-left:25px;
+            dt{
+                font-weight:bolder;
+                margin-bottom: 5px;
+            }
+            dd{
+                line-height:22px;
+                a{
+                    font-size:12px;
+                    color:#7f7f7f;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+
+    /*底部服务广告*/
+    .foot_service{
+        width:100%;
+        text-align:center;
+        box-sizing:border-box;
+        padding:30px 0;
+        img{
+            border-right:1px #ccc solid;
+            margin:0 5px;
+            &:nth-child(3){
+                border:none;
+            }
+        }
+        
+    }
+
+    /*底部友情链接*/
+    .foot_link{
+        text-align:center;
+        width:100%;
+        font-size:12px;
+        color:#797979;
+        a{
+            color:#797979;
+            &:hover{text-decoration:underline;}
+        }
+        p{line-height:22px;}
+        .link{
+            margin-top: 20px;
+        }
+    }
+
+
+/*固定侧栏*/
+
+aside{
+    width:36px;
+    height:100%;
+    position:fixed;
+    background:#000;
+    right:0px;
+    top:0px;
+    z-index:1333;
+    .aside_style{
+        width:100%;
+        height:36px;
+        background-color:#000;
+        position:relative;
+        cursor:pointer;
+        transition:all 0.5s;
+        &:hover{background-color:#e50163;}
+    }
+
+    /*侧栏登陆状态*/
+    .state{
+        margin-top: 180px;
+        background:url(../image/aside_state.png) no-repeat center;
+        width: 39px;
+        height: 39px;
+        position:relative;
+        cursor:pointer;
+        &:hover{
+            background-color:#e50163;
+        }
+        &:hover .state_con{
+            display:block;
+        }
+        .state_con{
+            display:none;
+            width:274px;
+            height:188px;
+            background:#fff;
+            position:absolute;
+            left:-274px;top:0px;
+            text-align:center;
+            font-size:12px;
+            border:1px #ccc solid;
+            .state_not{
+                margin-top: 12px;
+                display:block;
+                input{
+                    border:1px #e50163 solid;
+                    background:none;
+                    font-size:12px;
+                    width:60px;height:24px;
+                    margin:10px 15px 0 15px;
+                    &:hover{
+                        background:#e50163;
+                        color:#fff;
+                        cursor:pointer;
+                    }
+                }
+            }
+
+            .state_yes{
+                width:100%;height:134px;
+                padding:40px 0px 20px 20px;
+                display:none;
+                img{float:left;margin-right: 10px;}
+                label{
+                    float:left;
+                    line-height:26px;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+                    white-space:nowrap;
+                    width:150px;
+                    text-align:left;
+                }
+            }
+            .state_order,.state_coll{
+                width:50%;height:35px;
+                margin-top: 18px;
+                float:left;
+                background:#eee;
+                border-right:1px #ccc solid;
+                cursor:pointer;
+            }
+
+            a{
+                position:absolute;
+                right:10px;
+                top:5px;
+                font-size:18px;
+                color:#666;
+            }
+
+            .whole_three{
+                position:absolute;
+                right:-18px;top:10px;
+            }
+        }
+    }
+
+    /*侧栏购物车*/
+    .aside_car{
+        width:100%;height:137px;
+        border-top:1px #ccc solid;
+        border-bottom:1px #ccc solid;
+        margin-top: 10px;
+        padding:10px 0;
+        text-align:center;
+        cursor:pointer;
+
+        &:hover{
+            background:#e50163;
+        }
+        &:hover .car_con{
+            display:block;
+        }
+        .car_txt{
+            letter-spacing:5px;
+            margin-top: 10px;
+            padding-left:5px;
+            color:#eee;
+            font-size:14px;
+        }
+        .car_num{
+            margin-top: 5px;;
+            span{background:#e50163;color:#fff;border-radius:50%;font-size:12px;text-align:center;padding:0px 3px;}
+        }
+
+        .car_con{
+            text-align:left;
+            display:none;
+            position:absolute;right:36px;
+            background:#eee;
+            width:276px;
+            height:100%;
+            top:0px;
+            border:1px #ccc solid;
+            .con_head{
+                width:100%;height:38px;
+                position:absolute;top:0px;
+                box-sizing:border-box;
+                padding:5px 10px;
+                font-size:14px;
+                .close{float:right;font-size:18px;}
+            }
+
+            .con_main{
+                width:100%;height:490px;
+                margin-top: 38px;
+                overflow:auto;
+                position:relative;
+                .goods{
+                    background:#fff;
+                    padding:10px;
+                    box-sizing:border-box;
+                    margin-bottom: 20px;
+                    li{
+                        width:100%;
+                        height:auto;
+                        overflow:hidden;
+                        margin-top: 10px;
+                        .car_img{
+                            width:50px;
+                            height:50px;
+                            float:left;
+                            text-align:center;
+                            overflow:hidden;
+                            border:1px #ccc solid;
+                            img{
+                                width:80%;
+                                
+                            }
+                        }
+                        .carLi_text{
+                            float:left;
+                            width:170px;
+                            margin-left: 10px;
+                            overflow:hidden;
+                            position:relative;
+                            p{
+                                font-size:12px;
+                                line-height:14px;
+                                color:#666;
+                                margin-bottom: 3px;
+                                span{
+                                    color:#999;
+                                    margin-right: 10px;
+                                }
+                                .car_price{
+                                    color:#e50163;
+                                    &::before{
+                                        content: "￥";
+                                        color:#e50163;
+                                    }
+                                }
+                            }
+                            a{font-size:12px;position:absolute;bottom:3px;right:0px;display:none;color:#666;}
+                        }
+                        &:hover .car_dleBtn{
+                            display:block;
+                        }
+                    }
+                }
+                .title{
+                    font-size:14px;
+                    line-height:24px;
+                    border-bottom:1px #ccc dashed;
+                }
+                .car_empty{
+                    display:inline-block;
+                    text-align:center;
+                }
+            }
+            .con_foot{
+                width:100%;
+                height:120px;
+                background:#fff;
+                position:absolute;bottom:0px;
+                padding:10px;
+                .foot_num{
+                    float:left;
+                    color:#999;
+                }
+                p{width:100%;margin:15px 0;float:left;}
+                .foot_price{
+                    float:right;
+                    font-size:18px;
+                    color:#e50163;
+                    &::before{
+                        content: "￥";
+                        color:#e50163;
+                    }
+                }
+                .car_btn{
+                    width:100%;height:40px;
+                    background:#e50163;
+                    color:#fff;
+                    cursor:pointer;
+                    border-radius:5px;
+                }
+            }
+            .con_three{
+                position:absolute;
+                right:-18px;
+                top:45%;
+            }
+        }
+    }
+
+    /*侧栏我的收藏*/
+    .aside_coll{
+        width:100%;
+        height:36px;
+        position:relative;
+        background:url(../image/aside_coll.png) no-repeat center;
+        margin-top: 10px;
+        background-color:#000;
+        transition:all 0.5s;
+        cursor:pointer;
+        &:hover{
+            background-color:#e50163;
+        }
+        &:hover .coll_con{
+            right:36px;
+        }
+        .coll_con{
+            position:absolute;
+            right:-136px;
+            width:100px;height:36px;
+            line-height:36px;
+            text-align:center;
+            color:#fff;
+            font-size:14px;
+            background:#e50163;
+            transition:all 0.5s;
+            z-index:-1;
+            letter-spacing:1.5px;
+        }
+    }
+
+    /*侧栏微信扫一扫*/
+    .aside_wechat{
+        width:100%;
+        height:36px;
+        position:relative;
+        background:url(../image/aside_wx.png) no-repeat center;
+        cursor:pointer;
+        &:hover{
+            background-color:#e50163;
+        }
+        &:hover .wechat_con{
+            display:block;
+            
+        }
+        .wechat_con{
+            position:absolute;
+            top:50%;
+            right:36px;
+            transform:translate(0,-50%);
+            display:none;
+        }
+    }
+
+    /*侧栏客服*/
+    .aside_server{
+        background:url(../image/aside_cus.png) no-repeat center;
+        margin: 0px;
+    }
+
+    /*侧栏回到顶部*/
+    .aside_top{
+        width:100%;height:36px;
+        bottom:50px;
+        background:url(../image/aside_top.png) no-repeat center;
+        position:absolute;
+        transition:all 0.5s;
+        cursor:pointer;
+        background-color:#000;
+        &:hover{
+            background-color:#e50163;
+            flex-direction:column
+        }
+        &:hover .top_con{
+            right:36px;
+        }
+        .top_con{
+            position:absolute;
+            right:-136px;background:#e50163;
+            color:#fff;text-align:center;line-height:36px;
+            width:100px;z-index:-1;
+            transition:all 0.5s;
+        }
+    }
+}
+

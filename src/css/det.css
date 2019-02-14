@@ -1,0 +1,440 @@
+/*详情页导航*/
+.det_nav {
+  width: 100%;
+  height: 40px;
+}
+.det_nav a {
+  display: block;
+  width: 6.66%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  color: #666;
+}
+.det_nav a:hover {
+  color: #222;
+}
+.det_nav a span {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  font-size: 12px;
+  display: inline-block;
+  line-height: 12px;
+  padding: 2px 5px;
+  background: red;
+  color: #fff;
+  border-radius: 8px;
+}
+/*购物车参数选择*/
+.det_parameter {
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden;
+  /*当前位置*/
+}
+.det_parameter .target_location {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.det_parameter .target_location a {
+  color: #666;
+}
+.det_parameter .parameter {
+  width: 580px;
+  float: left;
+  margin-left: 50px;
+  /*商品价格*/
+  /*商品颜色*/
+  /*商品尺寸*/
+  /*商品数量*/
+  /*商品购买*/
+  /*商品服务*/
+}
+.det_parameter .parameter .shop-int {
+  width: 580px;
+  margin-top: 20px;
+  height: 136px;
+  float: left;
+  background: url(../image/list/det_price_bg.png);
+  position: relative;
+}
+.det_parameter .parameter .shop-int .shop_price {
+  width: 100%;
+  font-size: 36px;
+  color: #e50065;
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+}
+.det_parameter .parameter .shop-int .shop_price::before {
+  content: '￥';
+  font-size: 24px;
+}
+.det_parameter .parameter .shop-int .codeshow {
+  width: 145px;
+  border-top: 1px dashed #D58E64;
+  font-size: 14px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+.det_parameter .parameter .shop-int .codeshow .mobile-payment {
+  width: 145px;
+  height: 145px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  border: 1px #ccc solid;
+  box-sizing: border-box;
+  border-top: none;
+  top: 0px;
+  display: none;
+}
+.det_parameter .parameter .shop-int .codeshow .mobile-payment img {
+  text-align: center;
+  margin-top: 25px;
+  width: 60%;
+}
+.det_parameter .parameter .shop-int .codeshow .mobile-payment .close {
+  position: absolute;
+  font-size: 18px;
+  color: #666;
+  right: 5px;
+}
+.det_parameter .parameter .shop-int .evaluate {
+  margin-left: 25px;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #666;
+  float: left;
+}
+.det_parameter .parameter .shop-int .evaluate a:hover {
+  color: #e50065;
+}
+.det_parameter .parameter .shop-color {
+  margin-top: 20px;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  line-height: 40px;
+  font-size: 12px;
+}
+.det_parameter .parameter .shop-color span {
+  display: inline-block;
+  width: 98px;
+  height: 42px;
+  border: 2px #ccc solid;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.det_parameter .parameter .shop-color span:hover {
+  color: #e50065;
+}
+.det_parameter .parameter .shop-color span img {
+  width: 30%;
+  margin-right: 10px;
+}
+.det_parameter .parameter .shop-color .active {
+  background: url(../image/list/color_bg.jpg) no-repeat;
+  border: none;
+}
+.det_parameter .parameter .shop-size {
+  widows: 100%;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 12px;
+  line-height: 40px;
+  float: left;
+}
+.det_parameter .parameter .shop-size span {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border: 1px #ccc solid;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.det_parameter .parameter .shop-size .active {
+  color: #e50065;
+  border: 1px #e50065 solid;
+}
+.det_parameter .parameter .shop-num {
+  width: 100%;
+  height: 40px;
+  float: left;
+  line-height: 34px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.det_parameter .parameter .shop-num span {
+  float: left;
+  display: block;
+}
+.det_parameter .parameter .shop-num .num {
+  float: left;
+  width: 79px;
+  height: 34px;
+  border: 1px #ccc solid;
+  margin-left: 4px;
+  margin-right: 10px;
+}
+.det_parameter .parameter .shop-num .num input {
+  float: left;
+  width: 29px;
+  height: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  background: none;
+  cursor: pointer;
+}
+.det_parameter .parameter .shop-num .num input:nth-child(1) {
+  width: 48px;
+  height: 32px;
+  border-right: 1px #ccc solid;
+  box-sizing: border-box;
+  float: left;
+}
+.det_parameter .parameter .shop-num .num input:nth-child(2) {
+  border-bottom: 1px #ccc solid;
+}
+.det_parameter .parameter .shop-buy {
+  width: 100%;
+  height: 50px;
+  float: left;
+  margin-top: 20px;
+}
+.det_parameter .parameter .shop-buy input {
+  width: 204px;
+  height: 50px;
+  border: 1px #e50065 solid;
+  color: #e50065;
+  background: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.det_parameter .parameter .shop-buy input:nth-child(2) {
+  background: #e50065;
+  color: #fff;
+}
+.det_parameter .parameter .shop-server {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  height: 40px;
+  margin-top: 20px;
+}
+.det_parameter .parameter .shop-server span {
+  padding-left: 20px;
+  font-size: 12px;
+  background: url(../image/list/16012209.png) no-repeat left;
+  margin-right: 20px;
+}
+.det_parameter .parameter .shop-server span:nth-child(2) {
+  background: url(../image/list/16012211.png) no-repeat left;
+}
+.det_parameter .parameter .shop-server span:nth-child(3) {
+  background: url(../image/list/16012213.png) no-repeat left;
+}
+/*商品收藏*/
+.det_coll {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.det_coll .coll_con {
+  width: 500px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.det_coll .coll_con a {
+  float: right;
+  color: #666;
+  padding-left: 18px;
+  background: url(../image/list/16012224.png) no-repeat left;
+}
+/*详情页评论|详情*/
+.det_con {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.det_con .con_left {
+  width: 190px;
+  overflow: hidden;
+  float: left;
+}
+.det_con .con_left img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.det_con .con_right {
+  width: 990px;
+  overflow: hidden;
+  float: right;
+  border: 1px #ccc solid;
+}
+.det_con .con_right .mbs_hd {
+  width: 100%;
+  overflow: hidden;
+  background: #e8e8e8;
+}
+.det_con .con_right .mbs_hd li {
+  float: left;
+  line-height: 40px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-top: 2px #e8e8e8 solid;
+}
+.det_con .con_right .mbs_hd .active {
+  background: #fff;
+  border-top: 2px #e50065 solid;
+}
+.det_con .con_right .mbs_bd {
+  width: 100%;
+  padding: 10px;
+}
+.det_con .con_right .mbs_bd img {
+  width: 100%;
+}
+.det_con .con_right .mbs_bd .title {
+  height: 50px;
+  border-bottom: 1px #ccc solid;
+  line-height: 50px;
+  padding-left: 25px;
+}
+.det_con .con_right .mbs_bd .user {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 10px 10px 10px;
+}
+.det_con .con_right .mbs_bd .user .user_all {
+  width: 100%;
+  height: 123px;
+  border-bottom: 1px #ccc dashed;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_left {
+  width: 20%;
+  float: left;
+  height: 100%;
+  font-size: 12px;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_left .user_img {
+  width: 50px;
+  height: 50px;
+  background: #e50065;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_left .user_name {
+  text-align: center;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_right {
+  float: left;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_right .content {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.det_con .con_right .mbs_bd .user .user_all .user_right .time {
+  color: #999;
+  margin-top: 30px;
+}
+.det_con .con_right .mbs_bd .pages {
+  text-align: center;
+}
+.det_con .con_right .mbs_bd .pages span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px #ccc solid;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.det_con .con_right .mbs_bd .pages .active {
+  background: #e50065;
+  color: #fff;
+}
+.det_con .con_right .mbs_bd li {
+  display: none;
+}
+.det_con .con_right .mbs_bd .active {
+  display: block;
+}
+/*加入购物车*/
+.det_gocar {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+}
+.det_gocar .con {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  zoom: 2;
+  border: 0.5px #ccc solid;
+  text-align: center;
+}
+.det_gocar .con .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #222;
+  color: #fff;
+  padding: 0px 6px 0px 6px;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 12px;
+}
+.det_gocar .con .text {
+  font-size: 8px;
+  margin-top: 50px;
+  display: inline-block;
+}
+.det_gocar .con .text img {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+.det_gocar .con .text .right {
+  float: left;
+  text-align: left;
+}
+.det_gocar .con .text .right p {
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-weight: bold;
+}
+.det_gocar .con .text .right span {
+  font-size: 6px;
+}
+.det_gocar .con .text .right span small {
+  color: #e50065;
+  font-weight: bold;
+}
+.det_gocar .con a img {
+  width: 60px;
+}

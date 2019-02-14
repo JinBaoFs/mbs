@@ -1,0 +1,328 @@
+.list_title {
+  width: 100%;
+  overflow: hidden;
+}
+/*选择分类*/
+.list_searched {
+  width: 100%;
+  margin-top: 30px;
+  line-height: 24px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.list_searched a {
+  display: inline-block;
+  width: 60px;
+  border: 1px #ccc solid;
+  padding-left: 10px;
+  padding-right: 5px;
+  position: relative;
+  height: 24px;
+  background: url(../image/list/ic_arrow.png) no-repeat 40px 10px;
+}
+.list_searched a:hover {
+  border: 1px #e60063 solid;
+}
+.list_searched a:hover .class_hide {
+  display: block;
+}
+.list_searched a .class_hide {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  border: 1px #e60063 solid;
+  left: -1px;
+  top: 22px;
+  display: none;
+  padding: 10px;
+  background: #fff;
+  z-index: 5;
+}
+.list_searched a .class_hide span {
+  width: 30%;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+.list_searched a .class_hide span:hover {
+  color: #e60063;
+}
+.list_searched .list_num {
+  float: right;
+}
+/*产品选择*/
+.list_search {
+  overflow: hidden;
+  width: 100%;
+  border: 1px #ccc solid;
+}
+.list_search dl {
+  height: 37px;
+  border-top: 1px #ccc solid;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  background: #eee;
+}
+.list_search dl dt {
+  background: #eee;
+  float: left;
+  width: 100px;
+  text-align: center;
+  line-height: 37px;
+}
+.list_search dl dd {
+  float: left;
+  width: 1098px;
+  padding: 2px 200px 2px 20px;
+  background: #fff;
+}
+.list_search dl dd a {
+  width: 100px;
+  line-height: 34px;
+  font-size: 12px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.list_search dl .more {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../image/list/ic_arrow.png) no-repeat 29px 8px;
+  font-size: 12px;
+  overflow: hidden;
+  line-height: 20px;
+  cursor: pointer;
+}
+.list_search .list_pin {
+  height: 60px;
+  border-top: none;
+}
+.list_search .list_pin dt {
+  line-height: 60px;
+}
+.list_search .list_pin dd {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.list_search .list_pin dd a {
+  display: block;
+  width: 120px;
+  float: left;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px #ccc solid;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.list_search .list_pin dd .active {
+  background: #e60063;
+  color: #fff;
+  border: 1px #e60063 solid;
+}
+.list_search .auto {
+  height: auto;
+}
+/*排序*/
+.list_sort {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  background: #f5f5f5;
+  font-size: 12px;
+  padding: 8px 10px;
+}
+.list_sort .sort_left {
+  width: 950px;
+  float: left;
+  height: 40px;
+}
+.list_sort .sort_left span {
+  display: block;
+  float: left;
+  border: 1px #ccc solid;
+  padding: 0 5px;
+  height: 24px;
+  line-height: 22px;
+  background: #fff;
+  margin-right: 1px;
+  cursor: pointer;
+}
+.list_sort .sort_left span input {
+  margin-right: 1px;
+  margin-top: 5px;
+  float: left;
+}
+.list_sort .sort_left span img {
+  margin-left: 1px;
+  margin-top: -1px;
+}
+.list_sort .sort_left .active {
+  background: #2b2b2b;
+  color: #fff;
+}
+.list_sort .sort_left .small {
+  display: block;
+  float: left;
+}
+.list_sort .sort_left .price_one,
+.list_sort .sort_left .price_tow {
+  display: block;
+  float: left;
+  margin: 0 5px;
+  width: 80px;
+  height: 24px;
+  border: 1px #ccc solid;
+}
+.list_sort .sort_right {
+  float: left;
+}
+.list_sort .sort_right a {
+  display: inline-block;
+  padding: 3e0px 8px;
+  border: 1px #ccc solid;
+  margin-left: 5px;
+  background: #fff;
+}
+.list_sort .sort_right a:nth-child(1) {
+  margin-left: 10px;
+}
+/*商品列表*/
+.list_goods {
+  width: 100%;
+  margin-top: 10px;
+  float: left;
+  margin-bottom: 20px;
+}
+.list_goods li {
+  width: 19%;
+  float: left;
+  margin-bottom: 10px;
+  border: 1px #ccc solid;
+  cursor: pointer;
+  margin-right: 1.25%;
+}
+.list_goods li:nth-child(5n) {
+  margin-right: 0px;
+}
+.list_goods li:hover {
+  border: 1px #e60063 solid;
+}
+.list_goods li .box_img {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.list_goods li .box_img img {
+  width: 100%;
+}
+.list_goods li .box_img .size {
+  width: 100%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+  display: none;
+  padding: 0 5px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 12px;
+}
+.list_goods li .box_img .size span {
+  margin: 0 5px;
+}
+.list_goods li .box_img .active {
+  display: block;
+}
+.list_goods li .sma_img {
+  height: auto;
+  width: 100%;
+  float: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.list_goods li .sma_img span {
+  width: 14%;
+  margin-right: 5px;
+  display: block;
+  float: left;
+}
+.list_goods li .sma_img span img {
+  width: 100%;
+  border: 1px #222 solid;
+}
+.list_goods li .sma_img span .active {
+  border: 1px #e60063 solid;
+}
+.list_goods li .price {
+  width: 100%;
+  float: left;
+}
+.list_goods li .price .pprice {
+  color: #e60063;
+  margin-right: 10px;
+}
+.list_goods li .price .pprice::before {
+  content: '￥';
+}
+.list_goods li .price .oprice {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #666;
+}
+.list_goods li .price .oprice::before {
+  content: '￥';
+}
+.list_goods li .title {
+  width: 100%;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #000;
+}
+.list_goods li .shop {
+  font-size: 12px;
+  color: #666;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.list_goods li .comment {
+  height: 30px;
+  width: 100%;
+  float: left;
+  border-top: 1px #ccc solid;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 5px;
+  color: #666;
+}
+.list_goods li .comment span {
+  margin-left: 20px;
+  color: blue;
+}
+/*商品分页*/
+.list_page {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.list_page span {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px #ccc solid;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.list_page strong {
+  margin: 0 5px;
+}
+.list_page .active {
+  background: #e60063;
+  color: #fff;
+}

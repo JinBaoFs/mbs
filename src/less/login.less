@@ -1,0 +1,159 @@
+/*login*/
+    body{
+        background:#cecccf;
+    }
+    header{
+        width:1016px;
+        height:117px;
+        margin:0 auto;
+        text-align:center;
+        img{
+            width:100%;
+        }
+    }
+    #login_main{
+        width:1016px;
+        margin:0 auto;
+        overflow:hidden;
+        background:#fff;
+        padding:20px 0;
+        .login_main_left,.reg_main_left{
+            width:508px;
+            overflow:hidden;
+            height:auto;
+            float:left;
+            box-sizing:border-box;
+            padding:0 20px;
+            img{
+                float:right;
+            }
+        }
+        .login_main_right,.reg_main_right{
+            width:508px;float:right;
+            padding:10px 50px;
+            box-sizing:border-box;
+            .login_btn_left,.login_btn_right,.reg_btn_left,.reg_btn_right{
+                width:50%;
+                height:40px;
+                text-align:center;
+                line-height:40px;
+                float:left;
+                cursor:pointer;
+            }
+            .active{
+                color:#e30165;
+            }
+
+            .logreg{
+                width:100%;
+                overflow:hidden;
+                border:1px #ccc solid;
+                padding:20px 40px;
+                position:relative;
+
+                label{
+                    width:100%;height:40px;
+                    margin-bottom: 25px;
+                    position:relative;
+                    display:block;
+                    input{
+                        width:100%;
+                        line-height:40px;
+                        height:40px;
+                        border:1px #ccc solid;
+                        border-radius:5px;
+                        padding-left:30px;
+                        background:none;
+                    }
+                    a{
+                        font-size:12px;
+                        color:#666;
+                        &:hover{
+                            text-decoration:underline;
+                        }
+                    }
+                    .erro{
+                        display:none;
+                        font-size:12px;
+                        color:#e30165;
+                        line-height:20px;
+                        padding-left:18px;
+                        background:url(../image/login_icon.png) no-repeat 1px 3px;
+                    }
+                    &:nth-child(1){
+                        background:url(../image/login_icon.png) no-repeat -10px -50px;
+                    }
+                    &:nth-child(2){
+                        background:url(../image/login_icon.png) no-repeat -10px -97px;
+                    }
+
+                    // &:nth-child(3),&:nth-child(5){
+                    //     display:none;
+                    // }
+
+                    &:nth-child(3){
+                        span{
+                            float:right;
+                            display:block;
+                            width:55%;
+                            background:#e30165;
+                            color:#fff;
+                            line-height:40px;
+                            text-align:center;
+                        }
+                        
+                    }
+                    .yzm_slide{
+                        position:absolute;right:0px;
+                        top:-18px;
+                        font-size:12px;
+                        cursor:pointer;
+                    }
+                }
+
+                .third_party{
+                    font-size:14px;
+                    line-height:40px;
+                    span{display:block;float:left;margin-right: 10px;}
+                    a{
+                        display:block;width:39px;height:39px;float:left;
+                    }
+                }
+
+                .login_ewm{
+                    width:52px;
+                    height:52px;
+                    position:absolute;right:0px;
+                    top:0px;
+                    background:url(../image/login_ewm.png) no-repeat;
+                    &:hover{
+                        background:url(../image/login_ewm.gif);
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+    }
+
+footer{
+    width:1016px;
+    margin:0 auto;
+    height:100px;
+    font-size:12px;
+    text-align:center;
+    padding-top:40px;
+    line-height:24px;
+    color:#989898;
+    a{
+        color:#989898;  
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+}
+
+/*中间内容*/
+main{
+    width:100%;
+    overflow:hidden;
+}

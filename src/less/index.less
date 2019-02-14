@@ -1,0 +1,265 @@
+/*导航开始*/
+.index_nav{
+    width:100%;height:45px;
+    .menu{
+        width:190px;
+        height:45px;
+        margin-right: 50px;
+        position:relative;
+        float:left;
+        background:url(../image/index_menu.jpg) no-repeat center;
+        background-color:#626262;
+        .menu_con{
+            position:absolute;
+            top:45px;
+            width:100%;
+            background:#fff;
+            padding:10px 0;
+            box-sizing:border-box;
+            z-index:100;
+            .goods_fen{
+                margin-bottom: 10px;
+                overflow:hidden;
+                padding:0px 20px;
+                
+                h3{
+                    font-weight:bold;
+                    margin-bottom: 5px;
+                }
+                h4{
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    overflow:hidden;
+                    a{
+                        font-size:12px;
+                        display:block;float:left;
+                        width:50%;line-height:20px;
+                        padding-left:10px;
+                        color:#666;
+                        margin-top: 2px;
+                        &:hover{text-decoration:underline;}
+                        &:nth-child(2n){
+                            border-left:1px #ccc solid;
+                        }
+                    }
+                    border-bottom:1px #ccc solid;
+                }
+                .hide_con{
+                    width:600px;
+                    height:300px;
+                    background:#fff;
+                    position:absolute;
+                    top:0px;
+                    padding:10px 20px;
+                    left:189px;border:1px #ccc solid;
+                    display:none;
+                    &:hover{
+                        display:block;
+                    }
+                    .hide_all{
+                        width:40%;
+                        float:left;
+                        margin-right: 10%;
+                        h3{font-size:14px;border-bottom:1px #eee solid;line-height:30px;padding-left:10px;}
+                        h4{
+                            border:none;
+                            padding:none;
+                            a{
+                                width:30%;
+                                border-left:1px #efefef solid;
+                                text-align:left;
+                                &:nth-child(3n-2){
+                                    border-left:none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .hide_con{
+                    display:block;
+                }
+            }
+        }
+        
+    }
+    li{
+        float:left;
+        padding:0 15px;
+        line-height:42px;
+        a{
+            font-size:14px;
+            color:#666;
+            &:hover{color:#e30165;}
+        }
+        .active{
+            color:#e30165;
+        }
+    }
+}
+/*导航结束*/
+
+/*banner开始*/
+.index_banner{
+    width:100%;
+    height:430px;
+    background:#626262;
+    position:relative;
+    overflow:hidden;
+    ul{
+        width:1000%;
+        height:430px;
+        position:absolute;
+        left:0;transition:all 0.5s;
+        li{ 
+            height:430px;
+            float:left;
+            width:10%;
+            position:relative;
+        }
+    }
+    .btn{
+        position:absolute;
+        z-index:5;
+        right:80px;bottom:10px;
+        span{width:15px;height:15px;background:#333;border-radius:50%;margin:0 5px;display:block;float:left;cursor:pointer;}
+        .active{background:#fff;}
+    }
+    
+}
+
+/*优选商品开始*/
+.shop_you{
+    width:100%;
+    overflow:hidden;
+    ul{
+        width:100%;
+        overflow:hidden;
+        height:1160px;
+        padding:20px 0;
+        background:url(../image/list/mbs_you_list.jpg) no-repeat center;
+        li{
+            width:25%;
+            height:50%;
+            float:left;
+            cursor:pointer;
+        }
+    }
+}
+
+/*名品专场*/
+.site{
+    width:100%;
+    overflow:hidden;
+    margin-top: 50px;
+    .title{
+        width:100%;
+        img{
+            width:100%;
+        }
+    }
+    .con{
+        width:100%;
+        overflow:hidden;
+        a{
+            display:block;
+            width:50%;
+            float:left;
+            overflow:hidden;
+        }
+    }
+}
+
+/*每周上新*/
+.new_week{
+    width:100%;
+    overflow:hidden;
+    .title{
+        width:100%;
+        img{width:100%;}
+    }
+    .con{
+        width:100%;
+        overflow:hidden;
+        height:750px;
+        position:relative;
+        ul{
+            width:1000%;
+            height:750px;
+            position:absolute;
+            left:0;transition:all 0.5s;
+            li{
+                height:750px;
+                float:left;
+                width:10%;
+            }
+        }
+    }
+}
+
+/*猜你喜欢*/
+.like{
+    width:100%;
+    overflow:hidden;
+    margin-bottom: 50px;
+    .title{
+        width:100%;
+        img{
+            margin-top: -50px;
+        }
+    }
+    .lk_con{
+        width:100%;
+        overflow:hidden;
+        li{
+            width:19%;
+            float:left;
+            margin-bottom: 20px;
+            padding-bottom:5px;
+            border:1px #ccc solid;
+            cursor:pointer;
+            margin-right: 1.25%;
+            &:nth-child(5n){
+                margin-right: 0px;
+            }
+            .lk_imgs{
+                width:100%;
+                img{width:100%;}
+            }
+            .lk_price{
+                width:100%;
+                padding:2px 5px;
+                .lk_pprice{
+                    float:left;
+                    margin-right: 10px;
+                    font-size:18px;
+                    color:#e30165;
+                }
+                .lk_oprice{
+                    float:left;
+                    text-decoration:line-through;
+                    color:#666;
+                    font-size:12px;
+                    line-height:26px;
+                }
+                a{
+                    float:right;
+                    padding:2px 8px;
+                    background:#e30165;
+                    color:#fff;
+                    font-size:12px;
+                    line-height:18px;
+                }
+            }
+            .lk_title{
+                font-size:14px;
+                padding:3px 8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
