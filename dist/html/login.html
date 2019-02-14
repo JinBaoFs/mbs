@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>梦芭莎登录</title>
+    <link rel="stylesheet" href="../css/gb_style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../lib/jquery.cookie.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
+</head>
+<body>
+    <!-- 登陆头部 -->
+    <header><img src="../image/login_header.jpg" alt=""></header>
+
+    <!-- 登陆内容 -->
+    <section id="login_main">
+        <section class="login_main_left"><img src="../image/M10_19_113700.jpg" alt=""></section>
+        <section class="login_main_right">
+            <div class="login_btn_left active">普通登陆<span></span></div>
+            <div class="login_btn_right">无密码登陆<span></span></div>
+            <form class="logreg">
+                <label>
+                    <input type="text" name="username" id="login_user" placeholder="账户">
+                    <div class="erro"></div>
+                </label>
+                <label>
+                    <input type="password" name="password" id="login_psw" placeholder = "密码">
+                    <div class="erro"></div>
+                </label>
+                <!-- <label>
+                    <input type="tell" name="tell" id="tell" placeholder = "手机号码">
+                    <div class="erro">手机号码不能为空</div>
+                </label> -->
+                <label>
+                    <input style="width:40%;padding-left:10px;" type="text" name="yzm" id="yzm" placeholder = "验证码">
+                    <span class="yzm_con">1998</span>
+                    <div class="erro">验证码不能为空</div>
+                    <div class="yzm_slide">换一张</div>
+                </label>
+                <!-- <label>
+                    <input type="text" name="num" id="num" placeholder = "请输入动态口令" style="width:55%;">
+                    <input type="button" class="One_time" value="获取手机动态口令">
+                </label> -->
+                <label for="" style="height:30px;margin-bottom: 0px;"><a href="">忘记密码?</a><a href="javascript:;" style="float:right;color:#e50065" class="go_reg">注册</a></label>
+                <label for="" style="height:40px;"><input type="button" id="btn_login" value="立即登录" style="padding-left:0px;background:#e50065;color:#fff;cursor:pointer;"></label>
+                <div class="third_party">
+                    <span>其它登陆方式</span>
+                    <a href="" style="background:url(../image/login_icon.png) no-repeat -89px -142px;"></a>
+                    <a href="" style="background:url(../image/login_icon.png) no-repeat -4px -142px;"></a>
+                    <a href="" style="background:url(../image/login_icon.png) no-repeat -46px -142px;"></a>
+                    <a href="" style="background:url(../image/login_icon.png) no-repeat -131px -142px;"></a>
+                </div>
+                <div class="login_ewm"></div>
+            </form>
+            
+        </section>
+    </section>
+
+    <!-- 登陆底部 -->
+    <footer>
+        <a href="../index.html">首页</a>
+        <a href="##">公司简介</a>
+        <a href="##">旗下品牌</a>
+        <a href="##">零售店址</a>
+        <a href="##">梦芭莎网盟</a>
+        <a href="##">网店代理</a>
+        <a href="##">网站地图</a>
+        <a href="##">友情链接</a>
+        <a href="##">加入我们</a>
+        <p>Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号</p>
+    </footer>
+
+    <!-- 固定侧栏 -->
+    <aside>
+        
+    </aside>
+</body>
+</html>

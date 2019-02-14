@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/gb_style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="lib/jquery.cookie.js"></script>
+    <script src="js/index.js"></script>
+    <title>【梦芭莎官网】</title>
+
+    <script>
+        $(function(){
+            indexWork();//首页功能
+            indexClick();//首页点击事件
+            indexSlide('.index_banner');//轮播图调用
+        })
+    </script>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <header>
+        <!-- 头部菜单小工具 -->
+        <section class="index_toll">
+            <div class="container">
+                <div class="toll_left"></div>
+                <div class="toll_right">
+                    <a href="html/login.html" class="login">登录</a>
+                    <a href="html/reg.html" class="reg">注册</a>
+                    <a href="javascript:;" class="sign_out" style="display:none;">退出登录</a>
+                    <a href="javascript:;" class="wechat">微信<img src="image/index_wechat.jpg" alt=""></a>
+                    <a href="javascript:;" class="blog">微博<img src="image/index_blog.png" alt=""></a>
+                    <a href="javascript:;" class="phone"><img src="image/index_h3.jpg" alt=""> 手机版</a>
+                    <a href="javascript:;" class="coll">收藏梦芭莎</a>
+                    <a href="html/car.html" class="car">购物车<img src="image/index_h4.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- 头部图片欢迎广告 -->
+        <section class="adver">
+            <div class="container">
+                <a href="###"><img src="image/index_wecom1.jpg" alt=""></a>
+                <a href="###"><img src="image/index_wecom2.jpg" alt=""></a>
+                <a href="###"><img src="image/index_wecom3.jpg" alt=""></a>
+                <a href="###"><img src="image/index_wecom4.jpg" alt=""></a>
+                <a href="###"><img src="image/index_wecom5.jpg" alt=""></a>
+            </div>
+        </section>
+        <!-- 头部搜索栏 -->
+        <section class="search">
+            <div class="container">
+                <div class="logo"><h1><a href="index.html">梦芭莎</a></h1></div>
+                <div class="check">
+                    <input type="text" class="check_txt" placeholder="乐淘年货 上万精品低至3折">
+                    <input type="button" class="check_btn" value="搜索">
+                </div>
+                <div class="search_right"><img src="image/logo_right.gif" alt=""></div>
+            </div>
+        </section>
+    </header>
+    <!-- 头部结束 -->
+
+    <!-- 内容开始 -->
+    <main>
+        <!-- 首页导航 -->
+        <section class="index_nav">
+            <div class="container">
+                <nav class="nav">
+                    <div class="menu">
+                        <div class="menu_con">
+                            <div class="women goods_fen">
+                                <h3><a href="##">女装</a></h3>
+                                <h4>
+                                    <a href="##">当季外套</a>
+                                    <a href="##">卫衣</a>
+                                    <a href="##">羽绒服</a>
+                                    <a href="##">打底</a>
+                                </h4>
+                                <div class="hide_con">
+                                    <div class="hide_one hide_all">
+                                        <h3>大家都在买</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                    <div class="hide_one hide_all">
+                                        <h3>新品</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                    <div class="hide_one hide_all">
+                                        <h3>连衣裙</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="man goods_fen">
+                                <h3><a href="##">男装</a></h3>
+                                <h4>
+                                    <a href="##">当季外套</a>
+                                    <a href="##">卫衣</a>
+                                    <a href="##">羽绒服</a>
+                                    <a href="##">打底</a>
+                                </h4>
+                                <div class="hide_con">
+                                    <div class="hide_one hide_all">
+                                        <h3>热销</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                    <div class="hide_one hide_all">
+                                        <h3>新品</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                    <div class="hide_one hide_all">
+                                        <h3>连衣裙</h3>
+                                        <h4>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                            <a href="##">新品</a><a href="##">外套</a><a href="##">卫衣</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li style="margin-right: 20px;"><a href="##">年货节</a></li>
+                    <li><a href="##" class="active">首页</a></li>
+                    <li><a href="##">品牌荟</a></li>
+                    <li><a href="##">发现潮流</a></li>
+                    <li><a href="##">聚划算</a></li>
+                    <li><a href="##">美国馆</a></li>
+                    <li><a href="##">名品馆</a></li>
+                    <li><a href="##">原创荟</a></li>
+                </nav>
+            </div>
+        </section>
+        <!-- 首页banner -->
+        <section class="index_banner">
+            <ul>
+                <li style="background:url(image/index_banner1.jpg) no-repeat center /cover"></li>
+                <li style="background:url(image/index_banner2.jpg) no-repeat center /cover"></li>
+                <li style="background:url(image/index_banner3.jpg) no-repeat center /cover"></li>
+                <li style="background:url(image/index_banner1.png) no-repeat center /cover"></li>
+                <li style="background:url(image/index_banner5.jpg) no-repeat center /cover"></li>
+                <li style="background:url(image/index_banner6.jpg) no-repeat center /cover"></li>
+            </ul>
+        </section>
+        <!-- 首页优惠券 -->
+        <section class="index_coupon">
+            <div class="container">
+                <a href="##"><img src="image/index_coupon.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="shop_you">
+            <div class="container">
+                <div class="title"><img src="image/list/mbs_you_title.jpg" alt=""></div>
+                <div class="con"><img src="image/list/mbs_you.jpg" alt=""></div>
+                <ul class="list">
+                    <li data-id="1"></li>
+                    <li data-id="2"></li>
+                    <li data-id="3"></li>
+                    <li data-id="4"></li>
+                    <li data-id="5"></li>
+                    <li data-id="2"></li>
+                    <li data-id="3"></li>
+                    <li data-id="4"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- 名品会 -->
+        <section class="site">
+            <div class="container">
+                <div class="title"><img src="image/list/mbs_ming.jpg" alt=""></div>
+                <div class="con">
+                    <a href="html/list.html?class=女装&sort=time"><img src="image/list/mbs_class1.jpg" alt=""></a>
+                    <a href="html/list.html?class=女装&sort=pprice"><img src="image/list/mbs_class2.jpg" alt=""></a>
+                    <a href="html/list.html?class=内衣&sort=time"><img src="image/list/mbs_class3.jpg" alt=""></a>
+                    <a href="html/list.html?class=男装&sort=time"><img src="image/list/mbs_class4.jpg" alt=""></a>
+                    <a href="html/list.html?class=女装&sort=pprice"><img src="image/list/mbs_class5.jpg" alt=""></a>
+                    <a href="html/list.html?class=女装&sort=time"><img src="image/list/mbs_class6.jpg" alt=""></a>
+                    <a href="html/list.html?class=女装&sort=time"><img src="image/list/mbs_class7.jpg" alt=""></a>
+                    <a href="html/list.html?class=女装&sort=time"><img src="image/list/mbs_class8.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="new_week">
+            <div class="container">
+                <div class="title"><img src="image/new_week.jpg" alt=""></div>
+                <div class="con" class="newweekcon">
+                    <ul>
+                        <li><a href=""><img src="image/new_w1.jpg" alt=""></a></li>
+                        <li><a href=""><img src="image/new_w2.jpg" alt=""></a></li>
+                        <li><a href=""><img src="image/new_w3.jpg" alt=""></a></li>
+                        <li><a href=""><img src="image/new_w4.jpg" alt=""></a></li>
+                        <li><a href=""><img src="image/new_w5.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section> -->
+        <!-- 猜你喜欢 -->
+        <section class="like">
+            <div class="container">
+                <div class="title"><img src="image/like.jpg" alt=""></div>
+                <ul class="lk_con likegoods">
+                    
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <!-- 内容结束 -->
+
+    <!-- 底部开始 -->
+    <footer>
+        <!-- 底部导航 -->
+        <section class="foot_nav">
+            <div class="container">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="##">注册新用户</a></dd>
+                    <dd><a href="##">如何订购</a></dd>
+                    <dd><a href="##">如何修改订单</a></dd>
+                    <dd><a href="##">尺码对照表</a></dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="##">支付方式</a></dd>
+                    <dd><a href="##">账户提现及退款失效</a></dd>
+                    <dd><a href="##">查看账户余额</a></dd>
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="##">配送费收取标准</a></dd>
+                    <dd><a href="##">配送范围及配送时效</a></dd>
+                    <dd><a href="##">签收注意事项</a></dd>
+                    <dd><a href="##">海外订购</a></dd>
+                </dl>
+                <dl>
+                    <dt>退货服务</dt>
+                    <dd><a href="##">退换货政策</a></dd>
+                    <dd><a href="##">退换货流程</a></dd>
+                    <dd><a href="##">隐私申明</a></dd>
+                </dl>
+                <dl>
+                    <dt>会员制度及优惠</dt>
+                    <dd><a href="##">优惠活动</a></dd>
+                    <dd><a href="##">VIP优惠尊享</a></dd>
+                    <dd><a href="##">大宗购物</a></dd>
+                    <dd><a href="##">积分制度</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="##">忘记密码</a></dd>
+                    <dd><a href="##">常见问题</a></dd>
+                    <dd><a href="##">在线客服</a></dd>
+                    <dd><a href="##">联系我们</a></dd>
+                    <dd><a href="##">专利平台</a></dd>
+                </dl>
+                <dl>
+                    <dt>咨询订购</dt>
+                    <dd><a href="##">400-716-2828</a></dd>
+                    <dt>咨询客服</dt>
+                    <dd><a href="##">400-716-7878</a></dd>
+                    <dt>招商热线</dt>
+                    <dd><a href="##">400-716-0266</a></dd>
+                </dl>
+                <dl>
+                    <img src="image/index_ewm.png" alt="">
+                </dl>
+            </div>
+        </section>
+        <!-- 底部导航 -->
+
+        <!-- 底部服务 -->
+        <section class="foot_service">
+            <div class="container">
+                <img src="image/index_f1.jpg" alt="">
+                <img src="image/index_f1.jpg" alt="">
+                <img src="image/index_f1.jpg" alt="">
+            </div>
+        </section>
+        <!-- 底部服务结束 -->
+
+        <section class="foot_link">
+            <div class="container">
+                <p>
+                    <a href="index.html">首页</a>
+                    <a href="##">公司简介</a>
+                    <a href="##">旗下品牌</a>
+                    <a href="##">零售店址</a>
+                    <a href="##">梦芭莎网盟</a>
+                    <a href="##">网店代理</a>
+                    <a href="##">网站地图</a>
+                    <a href="##">友情链接</a>
+                    <a href="##">加入我们</a>
+                </p>
+                <p>Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公司 All Rights Reserved 粤B2-20080069号</p>
+                <div class="link">
+                    <img src="image/index_link1.jpg" alt="">
+                    <img src="image/index_link2.jpg" alt="">
+                    <img src="image/index_link3.jpg" alt="">
+                    <img src="image/index_link4.jpg" alt="">
+                    <img src="image/index_link5.jpg" alt="">
+                    <img src="image/index_link6.jpg" alt="">
+                    <img src="image/index_link7.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section></section>
+    </footer>
+    <!-- 底部结束 -->
+
+    <!-- 固定侧栏 -->
+    <aside>
+        <!-- 用户的状态 -->
+        <div class="state aside_style">
+            <div class="state_con">
+                <div class="state_not">
+                    <img src="image/aside_user.jpg" alt=""><br>
+                    请先登录哦!<br>
+                    <input type="button" class="go_login" value="登录">
+                    <input type="button" class="go_reg" value="注册">
+                </div>
+                <div class="state_yes">
+                    <img src="image/aside_user2.jpg" alt="">
+                    <label style="margin-top: 10px;">用户名：<span class="aside_user">Jinbao357fomaxl@qq.com</span></label>
+                    <label>会员类型: <span>至尊会员</span></label>
+                </div>
+                <input type="button" class="state_order" value="我的订单">
+                <input type="button" class="state_coll" value="我的收藏">
+                <a href="##" class="state_close">&times;</a>
+                <span class="whole_three"></span>
+            </div>
+        </div>
+        
+        <!-- 侧栏购物车 -->
+        <div class="aside_car">
+            <div class="car_ico"><img src="image/aside_car.png" alt=""></div>
+            <div class="car_txt">购物车</div>
+            <div class="car_num"><span>0</span></div>
+            <div class="car_con">
+                <div class="con_head">
+                    购物车
+                    <a href="##" class="close">&times;</a>
+                </div>
+                <div class="con_main">
+                    <!-- <div class="goods mengbasha">
+                        <div class="title">梦芭莎</div>
+                        <ul>
+                            <li data-id="1">
+                                <div class="car_img">
+                                    <img src="image/car_img.jpg" alt="">
+                                </div>
+                                <div class="carLi_text">
+                                    <p class="whole_dan">梦芭莎优雅轻奢貉子毛装饰斗篷羊毛大衣</p>
+                                    <p><span>S</span><span>0A1 蓝色</span></p>
+                                    <p><span class="car_price">188.88</span>*1</p>
+                                    <a href="##" class="car_dleBtn">删除</a>
+                                </div>
+                            </li>
+                            <li data-id="1">
+                                <div class="car_img">
+                                    <img src="image/car_img.jpg" alt="">
+                                </div>
+                                <div class="carLi_text">
+                                    <p class="whole_dan">梦芭莎优雅轻奢貉子毛装饰斗篷羊毛大衣</p>
+                                    <p><span>S</span><span>0A1 蓝色</span></p>
+                                    <p><span class="car_price">188.88</span>*1</p>
+                                    <a href="##" class="car_dleBtn">删除</a>
+                                </div>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="goods qianhe">
+                        <div class="title">千鹤旗舰店</div>
+                        <ul>
+                            <li data-id="1">
+                                <div class="car_img">
+                                    <img src="image/car_img.jpg" alt="">
+                                </div>
+                                <div class="carLi_text">
+                                    <p class="whole_dan">梦芭莎优雅轻奢貉子毛装饰斗篷羊毛大衣</p>
+                                    <p><span>S</span><span>0A1 蓝色</span></p>
+                                    <p><span class="car_price">188.88</span>*1</p>
+                                    <a href="##" class="car_dleBtn">删除</a>
+                                </div>
+                            </li>
+                            <li data-id="1">
+                                <div class="car_img">
+                                    <img src="image/car_img.jpg" alt="">
+                                </div>
+                                <div class="carLi_text">
+                                    <p class="whole_dan">梦芭莎优雅轻奢貉子毛装饰斗篷羊毛大衣</p>
+                                    <p><span>S</span><span>0A1 蓝色</span></p>
+                                    <p><span class="car_price">188.88</span>*1</p>
+                                    <a href="##" class="car_dleBtn">删除</a>
+                                </div>
+                            </li>  
+                        </ul>
+                    </div> -->
+                    <span class="car_empty whole_center" id="car_empty">购物车什么都没有?<br />再逛一下吧!</span>
+                </div>
+                <div class="con_foot">
+                    <p><span class="foot_num">共0件商品</span><span class="foot_price">0</span></p>
+                    <input type="button" class="car_btn" value="去购物车结算">
+                </div>
+                <span class="con_three whole_three"></span>
+            </div>
+        </div>
+        <!-- 侧栏购物车结束 -->
+
+        <!-- 侧栏我的收藏开始 -->
+        <div class="aside_coll">
+            <div class="coll_con">我的收藏</div>
+        </div>
+
+        <!-- 侧栏微信扫一扫开始 -->
+        <div class="aside_wechat">
+            <div class="wechat_con"><img src="image/aside_wechat_img.png" alt=""></div>
+        </div>
+        <!-- 侧栏客服联系开始 -->
+        <div class="aside_coll aside_server">
+            <div class="coll_con">客服联系</div>
+        </div>
+
+        <!-- 侧栏回到顶部 -->
+        <div class="aside_top">
+            <div class="top_con">回到顶部</div>
+        </div>
+    </aside>
+</body>
+</html>
