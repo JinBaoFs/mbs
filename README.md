@@ -3,7 +3,7 @@
 整个网站使用 ES6、ajax、php、less、jquery、html5 等搭建，整个网站由网站首页、商品分类页、注册页、登录页、商品信息展示页、商品筛选页、商品排序、购物车及结算页组成，整个网站包含了将网页添加到收藏夹、关键字搜索、图片轮播、商品分类菜单切换、商品简介、放大镜、注册、登录等功能。
 
 ## 在线访问
-![梦芭莎官网](http://www.moonbasa.com/)
+[http://www.moonbasa.com/](http://www.moonbasa.com/)
 
 ## 技术栈
 * 前端： jquery、ES6、ajax、less、html5
