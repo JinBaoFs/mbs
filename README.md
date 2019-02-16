@@ -6,10 +6,10 @@
 [梦芭莎官网](http://www.moonbasa.com/)
 
 ## 技术栈
-###*前端： jquery、ES6、ajax、less、html5
-###*服务器端： PHP
-###*数据库： MySQL
-###*构建工具： gulp、git
+* 前端： jquery、ES6、ajax、less、html5
+* 服务器端： PHP
+* 数据库： MySQL
+* 构建工具： gulp、git
 
 ## 项目介绍
 ```
@@ -28,6 +28,7 @@ cd dswz
 # localhost网络访问
 
 ```
+
 
 ## 项目结构
 ```
